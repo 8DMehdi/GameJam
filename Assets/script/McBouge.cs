@@ -5,6 +5,7 @@ using UnityEngine;
 public class McBouge : MonoBehaviour
 {
     // Start is called before the first frame update
+    SpriteRenderer sprite;
     private Rigidbody2D rb;
     public float speed;
     public Animator  animator;
@@ -18,6 +19,7 @@ public class McBouge : MonoBehaviour
 
     void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -31,11 +33,13 @@ public class McBouge : MonoBehaviour
          if (Input.GetKey("q"))
          {
              transform.position += Vector3.left * speed * Time.deltaTime;
+             sprite.flipX = true;
          }
          if (Input.GetKey("d"))
          {
              transform.position += Vector3.right * speed * Time.deltaTime;
-         }
+            sprite.flipX = false;
+        }
          if (Input.GetKey("z"))
          {
           transform.position += Vector3.up * speed * Time.deltaTime;
