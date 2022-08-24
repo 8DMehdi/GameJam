@@ -68,15 +68,21 @@ public class McBouge : MonoBehaviour
         //rb.velocity = new Vector2(transform.localScale.x * dashPower, 0f);
 
 
-         speed = speed - 10;
+         if (Input.GetKey("q"))
+         {
+            rb.velocity = new Vector2(transform.localScale.x * -dashPower, 0f);
+         }
+         if (Input.GetKey("d"))
+         {
+             rb.velocity = new Vector2(transform.localScale.x * dashPower, 0f);
+         }
      
-        
-             
+            
         tr.emitting = true;
         yield return new WaitForSeconds(dashTime);
         tr.emitting = false;
         isDashing = false;
-        speed = speed + 10;
+        rb.velocity = new Vector2(0, 0f);
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
      }
