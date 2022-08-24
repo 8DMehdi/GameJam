@@ -1018,6 +1018,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1638595466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8693901848053842569, guid: 13a4efba253b171439ad1e8a05c76fa7, type: 3}
+  m_PrefabInstance: {fileID: 8693901849108135897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1895754209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1086,6 +1091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin
       objectReference: {fileID: 0}
+    - target: {fileID: 8693901848053842570, guid: 13a4efba253b171439ad1e8a05c76fa7, type: 3}
+      propertyPath: piece
+      value: 
+      objectReference: {fileID: 1638595466}
     - target: {fileID: 8693901848053842570, guid: 13a4efba253b171439ad1e8a05c76fa7, type: 3}
       propertyPath: porte0
       value: 

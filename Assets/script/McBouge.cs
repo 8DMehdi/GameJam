@@ -26,6 +26,7 @@ public class McBouge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
         if(isDashing)
          {
             return;
@@ -79,4 +80,6 @@ public class McBouge : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
      }
+
+
 }

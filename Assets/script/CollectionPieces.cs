@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class CollectionPieces : MonoBehaviour
 {
-    private int PieceCount;
     public GameObject porteO;
     public GameObject porteL;
+    public GameObject piece;
+    public int PieceCount;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +23,13 @@ public class CollectionPieces : MonoBehaviour
             porteO.SetActive(true);
             porteL.SetActive(false);
         }
-        if(Input.GetKeyDown(KeyCode.Space)){
-            PieceCount += 1; 
-        }
     }
 
      private void OnTriggerEnter2D(Collider2D collision){
         PieceCount += 1;
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        piece.GetComponent<SpriteRenderer>().enabled = true;
+        piece.GetComponent<Collider2D>().enabled = true;
+        Debug.Log(PieceCount);
     }
 }
