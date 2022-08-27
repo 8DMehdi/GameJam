@@ -8,7 +8,7 @@ public class McPiece : MonoBehaviour
     public GameObject porteL;
     public GameObject piece;
     public int PieceCount;
-    public AudioSource ferme;
+    public AudioSource open;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class McPiece : MonoBehaviour
         if (PieceCount >= 3)
         {
             porteO.SetActive(true);
-            ferme.Play();
+            open.Play();
             porteL.SetActive(false);
         }
     }
