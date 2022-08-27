@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/niveau2.unity
     guid: 2a994c6658771784da3c485543090f1e
+  - enabled: 1
+    path: Assets/Scenes/labyrinthe.unity
+    guid: a5c4a925e4dd7914da1f4cfe244a1699
   m_configObjects: {}
