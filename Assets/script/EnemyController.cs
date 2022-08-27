@@ -8,7 +8,6 @@ public class EnemyController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player"){
-            Debug.Log("Vous êtes mort");
             GameManager.Instance.GameOver.SetActive(true);
             Time.timeScale = 0;
         }

@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
 
     public GameObject GameOver;
-    public bool IsPause = false;
     public static GameManager Instance;
 
     private void Awake()
