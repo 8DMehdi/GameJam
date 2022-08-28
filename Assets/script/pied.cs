@@ -8,6 +8,7 @@ public class pied : MonoBehaviour
     public GameObject presse;
     public GameObject F;
     public GameObject gun;
+    public GameObject ung;
     private int flag =0;
     private int flage =0;
 
@@ -26,9 +27,9 @@ public class pied : MonoBehaviour
         {
             parche.SetActive(false);
             gun.SetActive(false);
+            ung.SetActive(true);
             flag = 0;
             F.SetActive(false);
-            
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
