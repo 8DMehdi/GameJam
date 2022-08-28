@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PN : MonoBehaviour
 {
+    public int id;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +16,9 @@ public class PN : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision)
+        if (collision.tag == "Player")
         {
-            SceneManager.LoadScene("Intro");
+            GameManager.Instance.MyLoadScene(id);
         }
     }
 }

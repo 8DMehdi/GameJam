@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 1388264786}
   - component: {fileID: 1388264785}
   - component: {fileID: 1388264788}
-  - component: {fileID: 1388264787}
+  - component: {fileID: 1388264789}
   m_Layer: 0
   m_Name: porte ouverte
   m_TagString: Untagged
@@ -1066,18 +1066,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1388264787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388264784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ee51a2b40fab5645b7e409019c0b469, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1388264788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1104,6 +1092,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6334368, y: 0.3722395}
   m_EdgeRadius: 0
+--- !u!114 &1388264789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388264784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa3117c408f23a41a25e965a2724c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 3
 --- !u!1 &1637705289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,7 +1189,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1637705293
 BoxCollider2D:
@@ -1228,6 +1229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa3117c408f23a41a25e965a2724c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
 --- !u!1001 &1697075749
 PrefabInstance:
   m_ObjectHideFlags: 0
