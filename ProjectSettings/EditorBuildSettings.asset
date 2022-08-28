@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GUN2.unity
     guid: 8768a68ea4742614c9498fa588c98a8e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GUN.unity
     guid: 9b83de67058315c41b1e907976a8540e
   m_configObjects: {}

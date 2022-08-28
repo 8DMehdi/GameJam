@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1444257512528280781, guid: 5c22d6fff69beb64987f41e4b658d0fc, type: 3}
       propertyPath: speed
-      value: 7
+      value: 8.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c22d6fff69beb64987f41e4b658d0fc, type: 3}
@@ -1021,6 +1021,7 @@ GameObject:
   - component: {fileID: 1589276655}
   - component: {fileID: 1589276654}
   - component: {fileID: 1589276656}
+  - component: {fileID: 1589276657}
   m_Layer: 0
   m_Name: porte ouverte
   m_TagString: Untagged
@@ -1104,9 +1105,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1589276653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ee51a2b40fab5645b7e409019c0b469, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fa3117c408f23a41a25e965a2724c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 4
+--- !u!61 &1589276657
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589276653}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000008195639, y: -0.04304838}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4946214, y: 0.40609676}
+  m_EdgeRadius: 0
 --- !u!1 &1809220899
 GameObject:
   m_ObjectHideFlags: 0

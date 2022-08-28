@@ -12,6 +12,9 @@ public class pied : MonoBehaviour
     private int flag =0;
     private int flage =0;
 
+
+    public AudioSource krchh;
+
     // Update is called once per frame
     void Update()
     {
@@ -30,6 +33,7 @@ public class pied : MonoBehaviour
             ung.SetActive(true);
             flag = 0;
             F.SetActive(false);
+            krchh.Play();
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

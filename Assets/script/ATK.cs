@@ -54,7 +54,7 @@ public class ATK : MonoBehaviour
         }
         if (Input.GetKeyDown("f") && flag == 1 )
         {
-            flag = 1;         
+            flag = 1;
         }
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); // On r�cup�re la position de la souris et on transforme �a en coordonn�e local dans le jeu
         mousePos.z = transform.position.z;                              // On dit que la position en Z de la souris est �gale � celle du joueur (pour �tre sur que le projectile sera sur le m�me plan que le personnage)
