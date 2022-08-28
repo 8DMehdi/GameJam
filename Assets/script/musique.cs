@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class musique : MonoBehaviour
 {
-    public AudioSource  musiqueBois;
 
+    public int play = 0;
 
-    void Awake()
+    public AudioSource musiqueBois;
+    void Update()
     {
-        if (!musiqueBois.isPlaying)
+        if (play == 0)
         {
             musiqueBois.Play();
+            play = 1;
         }
         DontDestroyOnLoad(musiqueBois);
+    }
+
+    private void Load()
+    {
+        play = PlayerPrefs.GetInt("1");
+    }
+
+    private void Save()
+    {
+        PlayerPrefs.SetInt("1", play);
     }
 }
