@@ -30,6 +30,8 @@ public class ATK : MonoBehaviour
     private Animator anim;                      // L'animator du joueur, ça nous permettra de lancer l'animation d'attaque quand on va tirer
     public bool flag = false;
 
+    public AudioSource shoot;
+
     void Start()
     {
         if (!PlayerPrefs.HasKey("degatDIST"))
@@ -65,6 +67,7 @@ public class ATK : MonoBehaviour
         // Bien maintenant qu'on connait dans quelle direction le joueur vise, on check si le joueur appuis sur son bouton de tir (ici clic-droit) ET qu'il n'est pas entrain de recharger (reloading = false)
         if (Input.GetMouseButtonDown(0) && !reloading && flag == true)
         {
+            shoot.Play();
             degats = PlayerPrefs.GetInt("degatDIST");
             anim.SetTrigger("attackDIST"); // On lance l'animation d'attaque, si vous n'avez pas d'animation d'attaque sur votre personnage vous pouvez supprimer cette ligne (il doit exister un trigger "attackDIST" dans les parameter de votre animator)
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class projectile : MonoBehaviour
 {
-
     // Script a mettre sur votre projectile que vous allez tirer depuis le script attackDIST
     // IL doit y avoir un TRIGGER sur l'objet et un rigidbody
 
@@ -22,7 +21,8 @@ public class projectile : MonoBehaviour
         if (truc.tag == "Ennemi")
         {                 // Si le truc qu'on touche a le tag "Ennemi"
             //truc.SendMessage("takeDamage", degats); // On cherche sur lui une fonction qui s'appel "takeDamage", et on la lance en lui donnant le nombre de dégat qu'on fait
-            Destroy(truc);
+            Destroy(truc.gameObject);
+            GameManager.Instance.Win.SetActive(true);
         }
 
         else if (!truc.isTrigger && truc.tag != "Player")
