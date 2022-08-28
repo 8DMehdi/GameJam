@@ -19,11 +19,12 @@ public class McPiece : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PieceCount >= 3)
+        if (PieceCount == 3)
         {
             porteO.SetActive(true);
             open.Play();
             porteL.SetActive(false);
+            PieceCount += 1;
         }
     }
 
